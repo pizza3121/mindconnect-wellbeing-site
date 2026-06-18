@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="MindConnect is a student wellbeing signposting hub for UWS London Campus.">
   <title>MindConnect - UWS London Student Wellbeing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="crisis">
-  Need help now? If you&rsquo;re in immediate danger call <a href="tel:999">999</a>.
-  For urgent emotional support, <strong>Samaritans</strong> are free, 24/7: <a href="tel:116123">116&nbsp;123</a>.
+  <div class="wrap crisis-in">
+    <span class="alert-dot" aria-hidden="true"></span>
+    <span>Need help now? If you&rsquo;re in immediate danger call <a href="tel:999">999</a>. For urgent emotional support, <strong>Samaritans</strong> are free, 24/7: <a href="tel:116123">116&nbsp;123</a>.</span>
+  </div>
 </div>
 
 <header class="nav">
@@ -33,19 +38,35 @@
 <main id="top">
 
 <section class="hero" aria-labelledby="hero-title">
-  <div class="wrap">
-    <span class="eyebrow"><span class="dot" aria-hidden="true"></span> UWS London Campus &middot; Student Wellbeing</span>
-    <h1 id="hero-title">A calmer place to find <em>the right help</em>, sooner.</h1>
-    <p class="lead">MindConnect brings campus and national mental-health support into one trusted place &mdash; so when things feel heavy, finding help takes a moment, not an afternoon.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#resources">Explore resources &rarr;</a>
-      <a class="btn btn-ghost" href="#support">Talk to someone now</a>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot" aria-hidden="true"></span> UWS London Campus &middot; Student Wellbeing</span>
+      <h1 id="hero-title">A calmer place to find <em>the right help</em>, sooner.</h1>
+      <p class="lead">MindConnect brings campus and national mental-health support into one trusted place &mdash; so when things feel heavy, finding help takes a moment, not an afternoon.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#resources">Explore resources <span aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-ghost" href="#support">Talk to someone now</a>
+      </div>
     </div>
 
+    <aside class="hero-card" aria-label="MindConnect quick routes">
+      <div class="hero-card-top">
+        <span class="mini-kicker">Quick routes</span>
+        <span class="status-pill">Signposting only</span>
+      </div>
+      <h2>Start with what fits today.</h2>
+      <div class="route-list">
+        <a href="#cat-crisis"><span aria-hidden="true">01</span> Urgent and crisis contacts</a>
+        <a href="#guides"><span aria-hidden="true">02</span> Short PDF self-help guides</a>
+        <a href="#support"><span aria-hidden="true">03</span> Campus and 24/7 support</a>
+      </div>
+      <p>This project helps students find trusted support. It is not a clinical or crisis service.</p>
+    </aside>
+
     <div class="stats" aria-label="Student wellbeing statistics">
-      <div class="stat"><div class="n">37%</div><div class="l">of first-year UK students report symptoms of depression and anxiety</div><div class="src">Office for National Statistics, 2022</div></div>
-      <div class="stat"><div class="n">48%</div><div class="l">of students say anxiety has affected their daily life</div><div class="src">Mental Health Foundation, 2023</div></div>
-      <div class="stat"><div class="n">&lt;50%</div><div class="l">of struggling students tell their university</div><div class="src">Oxford CBT, 2024</div></div>
+      <div class="stat"><span class="stat-label">Student wellbeing</span><div class="n">37%</div><div class="l">of first-year UK students report symptoms of depression and anxiety</div><div class="src">Office for National Statistics, 2022</div></div>
+      <div class="stat"><span class="stat-label">Daily impact</span><div class="n">48%</div><div class="l">of students say anxiety has affected their daily life</div><div class="src">Mental Health Foundation, 2023</div></div>
+      <div class="stat"><span class="stat-label">Support gap</span><div class="n">&lt;50%</div><div class="l">of struggling students tell their university</div><div class="src">Oxford CBT, 2024</div></div>
     </div>
   </div>
 </section>
@@ -58,12 +79,12 @@
       <p>Whatever&rsquo;s on your mind, pick the topic closest to it. Every link is checked and points to a trusted NHS, charity or campus service.</p>
     </div>
     <div class="grid">
-      <a class="rcard" href="#cat-anxiety"><span class="ic" aria-hidden="true">🌿</span><h3>Anxiety &amp; stress</h3><p>Grounding techniques, breathing tools, and when to seek more help.</p><span class="go">Open &rarr;</span></a>
-      <a class="rcard" href="#cat-mood"><span class="ic" aria-hidden="true">🌤️</span><h3>Low mood &amp; depression</h3><p>Understanding low mood, small daily steps, and routes to support.</p><span class="go">Open &rarr;</span></a>
-      <a class="rcard" href="#cat-sleep"><span class="ic" aria-hidden="true">🌙</span><h3>Sleep</h3><p>Sleep hygiene, screen habits, and free CBT-for-insomnia tools.</p><span class="go">Open &rarr;</span></a>
-      <a class="rcard" href="#cat-academic"><span class="ic" aria-hidden="true">📚</span><h3>Academic pressure</h3><p>Deadlines, perfectionism, and how to reach UWS academic support.</p><span class="go">Open &rarr;</span></a>
-      <a class="rcard" href="#cat-finance"><span class="ic" aria-hidden="true">💷</span><h3>Money worries</h3><p>Hardship funds, budgeting help, and the UWS finance team.</p><span class="go">Open &rarr;</span></a>
-      <a class="rcard" href="#cat-crisis"><span class="ic" aria-hidden="true">🆘</span><h3>Urgent &amp; crisis help</h3><p>What to do right now if you or a friend are not safe.</p><span class="go">Open &rarr;</span></a>
+      <a class="rcard" href="#cat-anxiety"><span class="ic" aria-hidden="true">🌿</span><span class="card-label">Tools and trusted links</span><h3>Anxiety &amp; stress</h3><p>Grounding techniques, breathing tools, and when to seek more help.</p><span class="go">Open resource <span aria-hidden="true">&rarr;</span></span></a>
+      <a class="rcard" href="#cat-mood"><span class="ic" aria-hidden="true">🌤️</span><span class="card-label">Support routes</span><h3>Low mood &amp; depression</h3><p>Understanding low mood, small daily steps, and routes to support.</p><span class="go">Open resource <span aria-hidden="true">&rarr;</span></span></a>
+      <a class="rcard" href="#cat-sleep"><span class="ic" aria-hidden="true">🌙</span><span class="card-label">Habits and routines</span><h3>Sleep</h3><p>Sleep hygiene, screen habits, and free CBT-for-insomnia tools.</p><span class="go">Open resource <span aria-hidden="true">&rarr;</span></span></a>
+      <a class="rcard" href="#cat-academic"><span class="ic" aria-hidden="true">📚</span><span class="card-label">University support</span><h3>Academic pressure</h3><p>Deadlines, perfectionism, and how to reach UWS academic support.</p><span class="go">Open resource <span aria-hidden="true">&rarr;</span></span></a>
+      <a class="rcard" href="#cat-finance"><span class="ic" aria-hidden="true">💷</span><span class="card-label">Practical help</span><h3>Money worries</h3><p>Hardship funds, budgeting help, and the UWS finance team.</p><span class="go">Open resource <span aria-hidden="true">&rarr;</span></span></a>
+      <a class="rcard urgent-card" href="#cat-crisis"><span class="ic" aria-hidden="true">🆘</span><span class="card-label">Help now</span><h3>Urgent &amp; crisis help</h3><p>What to do right now if you or a friend are not safe.</p><span class="go">Open resource <span aria-hidden="true">&rarr;</span></span></a>
     </div>
   </div>
 </section>
@@ -79,6 +100,7 @@
         <li>Try the 5-4-3-2-1 grounding technique in the self-help guides.</li>
         <li>UWS Wellbeing Service &mdash; book a 1:1 wellbeing appointment.</li>
       </ul>
+      <p class="checked">Last checked: June 2026</p>
     </div>
     <div class="detail" id="cat-mood">
       <h2>🌤️ Low mood &amp; depression</h2>
@@ -87,6 +109,7 @@
         <li>Mind &mdash; understanding depression <span class="badge">mind.org.uk</span></li>
         <li>Student Space by Student Minds &mdash; text, web chat &amp; phone support <span class="badge">studentspace.org.uk</span></li>
       </ul>
+      <p class="checked">Last checked: June 2026</p>
     </div>
     <div class="detail" id="cat-sleep">
       <h2>🌙 Sleep</h2>
@@ -95,6 +118,7 @@
         <li>Sleepstation / Sleepio &mdash; CBT for insomnia, subject to NHS access.</li>
         <li>See Guide 3 for a simple wind-down routine.</li>
       </ul>
+      <p class="checked">Last checked: June 2026</p>
     </div>
     <div class="detail" id="cat-academic">
       <h2>📚 Academic pressure</h2>
@@ -103,6 +127,7 @@
         <li>Talk to your Personal Tutor early &mdash; extensions and ECS are there to help.</li>
         <li>See Guide 4 on managing deadlines without burning out.</li>
       </ul>
+      <p class="checked">Last checked: June 2026</p>
     </div>
     <div class="detail" id="cat-finance">
       <h2>💷 Money worries</h2>
@@ -111,6 +136,7 @@
         <li>Blackbullion &mdash; free student budgeting tools <span class="badge">blackbullion.com</span></li>
         <li>Citizens Advice &mdash; free, confidential money &amp; debt advice.</li>
       </ul>
+      <p class="checked">Last checked: June 2026</p>
     </div>
     <div class="detail crisis-detail" id="cat-crisis">
       <h2>🆘 Urgent &amp; crisis help</h2>
@@ -120,6 +146,7 @@
         <li>Shout &mdash; 24/7 text support: text <strong>SHOUT</strong> to 85258.</li>
         <li>NHS 111 &mdash; select the mental health option for urgent help.</li>
       </ul>
+      <p class="checked">Last checked: June 2026</p>
     </div>
   </div>
 </section>
@@ -132,10 +159,10 @@
       <p>Each is two pages or less, written in plain English. Download, print, or read on your phone.</p>
     </div>
     <div class="guides">
-      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">1</span><div><h3>Calm in five minutes</h3><p>Box breathing and the 5-4-3-2-1 grounding technique for moments of panic.</p><span class="tag">Anxiety · Drive folder</span></div></a>
-      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">2</span><div><h3>Small steps for low days</h3><p>Behavioural-activation basics: tiny actions that lift mood when motivation is gone.</p><span class="tag">Low mood · Drive folder</span></div></a>
-      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">3</span><div><h3>A better night&rsquo;s sleep</h3><p>A simple wind-down routine and screen-curfew habit that actually sticks.</p><span class="tag">Sleep · Drive folder</span></div></a>
-      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">4</span><div><h3>Deadlines without dread</h3><p>Breaking work into chunks, beating perfectionism, and asking for help in time.</p><span class="tag">Academic · Drive folder</span></div></a>
+      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">PDF</span><div><span class="guide-index">Guide 1</span><h3>Calm in five minutes</h3><p>Box breathing and the 5-4-3-2-1 grounding technique for moments of panic.</p><span class="tag">Anxiety · Drive folder</span></div></a>
+      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">PDF</span><div><span class="guide-index">Guide 2</span><h3>Small steps for low days</h3><p>Behavioural-activation basics: tiny actions that lift mood when motivation is gone.</p><span class="tag">Low mood · Drive folder</span></div></a>
+      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">PDF</span><div><span class="guide-index">Guide 3</span><h3>A better night&rsquo;s sleep</h3><p>A simple wind-down routine and screen-curfew habit that actually sticks.</p><span class="tag">Sleep · Drive folder</span></div></a>
+      <a class="guide" href="https://drive.google.com/drive/folders/1Lnxt6z80dfbDnBFZ5ZksXFZ4ZtIVvVaO?usp=sharing" target="_blank" rel="noopener"><span class="num">PDF</span><div><span class="guide-index">Guide 4</span><h3>Deadlines without dread</h3><p>Breaking work into chunks, beating perfectionism, and asking for help in time.</p><span class="tag">Academic · Drive folder</span></div></a>
     </div>
   </div>
 </section>
@@ -148,7 +175,7 @@
       <p>If you&rsquo;d rather talk to a person, here&rsquo;s where to start. All of these are free and confidential.</p>
       <div class="support-grid">
         <div class="sup"><h3>UWS Wellbeing Service</h3><p>Free, confidential 1:1 support for students on campus.</p><span class="ph">Book via the student portal</span></div>
-        <div class="sup"><h3>Samaritans</h3><p>Whatever you&rsquo;re going through, 24 hours a day.</p><span class="ph">116 123</span></div>
+        <div class="sup"><h3>Samaritans</h3><p>Whatever you&rsquo;re going through, 24 hours a day.</p><a class="ph" href="tel:116123">116 123</a></div>
         <div class="sup"><h3>Shout</h3><p>24/7 text support if you&rsquo;d rather not speak.</p><span class="ph">Text SHOUT to 85258</span></div>
       </div>
     </div>
@@ -178,7 +205,7 @@
       <h2 id="feedback-title">Was this useful?</h2>
       <p>Two minutes, completely anonymous. It genuinely helps us improve MindConnect for the next student who needs it.</p>
       <div class="cta-row center">
-        <!-- Replace this with the final MS Forms feedback link -->
+        <!-- Replace with final MS Forms feedback link -->
         <a class="btn btn-primary" href="#feedback" data-ms-forms-placeholder="[PASTE_MS_FORMS_LINK_HERE]">Feedback form link will be added here.</a>
       </div>
       <p class="small-note">We don&rsquo;t collect any personal or identifying information through this website.</p>
@@ -241,20 +268,67 @@
 <script>
   const navToggle = document.querySelector('.navtoggle');
   const menu = document.getElementById('menu');
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const animatedItems = document.querySelectorAll('.stat, .rcard, .detail, .guide, .sup, .step, .fb, .gantt');
+
+  document.body.classList.add('js-ready');
 
   navToggle.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', String(isOpen));
+    navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     navToggle.textContent = isOpen ? 'Close' : 'Menu';
   });
 
-  menu.querySelectorAll('a').forEach((link) => {
+  navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       menu.classList.remove('open');
       navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
       navToggle.textContent = 'Menu';
     });
   });
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    animatedItems.forEach((item) => observer.observe(item));
+  } else {
+    animatedItems.forEach((item) => item.classList.add('is-visible'));
+  }
+
+  window.setTimeout(() => {
+    animatedItems.forEach((item) => item.classList.add('is-visible'));
+  }, 1200);
+
+  const sections = [...navLinks]
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window) {
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          const isCurrent = link.getAttribute('href') === `#${entry.target.id}`;
+          if (isCurrent) {
+            link.setAttribute('aria-current', 'page');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      });
+    }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+
+    sections.forEach((section) => navObserver.observe(section));
+  }
 </script>
 
 </body>
